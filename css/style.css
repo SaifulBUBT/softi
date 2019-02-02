@@ -1,0 +1,38 @@
+.home-banner {
+  position: relative;
+}
+.banner-bg {
+  background-image: url("../img/softnio-creative-agency.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  height: 100vh;
+  max-height: inherit;
+  position: absolute;
+  width: 100%;
+  background-size: cover;
+}
+.navbar-brand img {
+  width: 150px;
+}
+
+.banner-bg .overlay {
+  background: #000;
+  opacity: 0.4;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+.banner-bg .overlay::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  opacity: 0.5;
+  background: url("../img/dots.png") repeat 0 0/3px 3px;
+}
